@@ -1,0 +1,209 @@
+//section-about
+.about{
+  background-color: $lightPurple;
+  .wrapper{
+    max-width: 100vw;
+    width:100%;
+   .aboutInfo{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 300px;
+    text-align:justify;
+    
+   }
+   .aboutSkills{
+    background-color: $lightColor;
+    
+    h2{
+      padding-top: 80px;
+      color: $fontColor1;
+      margin-bottom: 50px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .skillIcons{
+      display: flex;
+      flex-wrap: wrap;
+      gap:60px;
+      margin-bottom: 120px;
+      
+      
+      .pie{
+        @property --p{
+          syntax: '<number>';
+          inherits: true;
+          initial-value: 0;
+        }
+        text-align: center;
+        --p:80;
+        --b:10px;
+        --c:#9a88b3;
+        --w:150px;
+        width:var(--w);
+        aspect-ratio:1;
+        position:relative;
+        display:inline-grid;
+        margin:5px;
+        place-content:center;
+        &:before,&:after{
+          content:"";
+          position:absolute;
+          border-radius:50%;
+        }
+        &:before{
+          inset:0;
+          background:
+            radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+            conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+          -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+        }
+        &:after {
+          inset:calc(50% - var(--b)/2);
+          background:var(--c);
+          transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+        }
+        
+        
+  
+       
+        
+        span{
+          display: block;
+          font-family: $bodyFamily;
+          font-size: 1.1rem;
+          font-style: normal;
+          font-weight: bold;
+          color:$fontColor1;
+        }
+        p{
+          font-family: $bodyFamily;
+          font-size: 0.9rem;
+          font-style: normal;
+          color:$fontColor1;
+        }
+        transition: 0.5s scale;
+        &:hover,&:focus{
+          scale: 1.3;
+          cursor: pointer;
+        }
+      }
+      
+
+      .no-round:before {
+        background-size:0 0,auto;
+      }
+      .no-round:after {
+        content:none;
+      }
+      .animate {
+        animation:p 1s .5s both;
+      }
+      
+      @keyframes p {
+        from{--p:0}
+      }
+    }
+   }
+  }
+}
+
+// section-projects
+.projects{
+  background-color: $lightPurple;
+ .wrapper{
+  h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ }
+}
+
+//section-contact
+
+.contact{
+  background-color: $secondary;
+  
+  .wrapper{
+    
+    display: flex;
+    flex-direction: column;
+   
+    h2{
+      text-align: center;
+      margin-top: 80px;
+      color: $whiteColor;
+    }
+    .social{
+      text-align: center;
+      i{
+        color:$btnColor;
+        margin-right: 15px;
+        transition: all 0.5s;
+        &:hover,&:focus{
+          color: $bottomLine;
+        }
+      }
+      margin-bottom: 20px;
+    }
+    form{
+      text-align: center;
+      .textFields{
+        display:grid;
+        grid-template-areas: 
+        "name email"
+        "subject phone"
+        "message message";
+        grid-gap:1.2rem;
+        margin-bottom: 1.2rem;
+        // Grid areas
+        .nameInput {
+          grid-area:name;
+        }
+        .subjectInput {
+          grid-area:subject;
+        }
+        .emailInput {
+          grid-area:email;
+        }
+        .phoneInput {
+          grid-area:phone;
+        }
+        .messageInput {
+          grid-area:message;
+          height:100px;
+        }
+        .textInput {
+          padding:0.5rem 1rem;
+        }
+       }
+       .btn {
+        display: inline-block;
+        width:30%;
+        background-color: $btnColor;
+        border-radius: 10px;
+        padding: 15px 0;
+        font-family: $bodyFamily;
+        font-weight: bold;
+        border:none;
+        margin-bottom: 50px;
+        transition: all 0.5s;
+        &:hover,&:focus{
+          background-color: $bottomLine;
+          cursor:pointer;
+        }
+      }
+      
+
+      }
+    }
+  }
+
+
