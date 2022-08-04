@@ -155,7 +155,7 @@
           <i class="fab fa-instagram"></i>
           <i class="fab fa-linkedin"></i>
         </div>
-        <form action="">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <div class="textFields">
             <label for="name" class="sr-only">Name</label>
             <input type="text" id ="name"class="textInput nameInput" placeholder="Name" >
@@ -171,6 +171,9 @@
             
             <label for="message" class="sr-only">Message</label>
             <textarea id ="message" class="textInput messageInput" placeholder="Enter Message" ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
           </div>
           <button type="submit" class="btn"> Submit</button>
         </form>
