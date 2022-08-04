@@ -33,11 +33,6 @@
       
       .pie{
 
-        @property --p{
-          syntax: '<number>';
-          inherits: true;
-          initial-value: 0;
-        }
         text-align: center;
         --p:80;
         --b:10px;
@@ -102,13 +97,6 @@
       }
       .no-round:after {
         content:none;
-      }
-      .animate {
-        animation:p 1s .5s both;
-      }
-      
-      @keyframes p {
-        from{--p:0}
       }
     }
    }

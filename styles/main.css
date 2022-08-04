@@ -487,13 +487,6 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-@property --p {
-  .about .wrapper .aboutSkills .skillIcons .pie {
-    syntax: "<number>";
-    inherits: true;
-    initial-value: 0;
-  }
-}
 .about .wrapper .aboutSkills .skillIcons .pie:before, .about .wrapper .aboutSkills .skillIcons .pie:after {
   content: "";
   position: absolute;
@@ -535,20 +528,6 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
 }
 .about .wrapper .aboutSkills .skillIcons .no-round:after {
   content: none;
-}
-.about .wrapper .aboutSkills .skillIcons .animate {
-  -webkit-animation: p 1s 0.5s both;
-          animation: p 1s 0.5s both;
-}
-@-webkit-keyframes p {
-  from {
-    --p:0;
-  }
-}
-@keyframes p {
-  from {
-    --p:0;
-  }
 }
 
 .projects {
