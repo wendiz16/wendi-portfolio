@@ -158,19 +158,19 @@
         <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <div class="textFields">
             <label for="name" class="sr-only">Name</label>
-            <input type="text" id ="name"class="textInput nameInput" placeholder="Name" >
+            <input type="text" id ="name"class="textInput nameInput" placeholder="Name" name="name">
             
             <label for="subject" class="sr-only">Subject</label>
-            <input type="text" id ="subject" class="textInput subjectInput" placeholder="Subject" >
+            <input type="text" id ="subject" class="textInput subjectInput" placeholder="Subject" name="subject">
             
             <label for="email" class="sr-only">Email</label>
-            <input type="email" id ="email" class="textInput emailInput" placeholder="Email Address" >
+            <input type="email" id ="email" class="textInput emailInput" placeholder="Email Address" name="email">
             
             <label for="phone" class="sr-only">Phone</label>
-            <input type="text" id ="phone" class="textInput phoneInput" placeholder="Phone Number" >
+            <input type="text" id ="phone" class="textInput phoneInput" placeholder="Phone Number" name="phone">
             
             <label for="message" class="sr-only">Message</label>
-            <textarea id ="message" class="textInput messageInput" placeholder="Enter Message" ></textarea>
+            <textarea id ="message" class="textInput messageInput" placeholder="Enter Message"  name="message"></textarea>
             <div class="my-2">
               <div data-netlify-recaptcha="true"></div>
             </div>
