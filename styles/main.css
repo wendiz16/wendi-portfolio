@@ -468,7 +468,6 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
 .about .wrapper .aboutSkills .carousel {
   display: none;
   width: 100%;
-  height: 200px;
   overflow-x: scroll;
   padding: 10px;
   margin: 0;
