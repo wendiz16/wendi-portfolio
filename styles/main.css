@@ -468,7 +468,6 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
 .about .wrapper .aboutSkills .carousel {
   display: none;
   width: 100%;
-  overflow-x: scroll;
   padding: 20px;
   margin: 0;
   white-space: nowrap;
@@ -727,6 +726,7 @@ footer {
   }
   .about .wrapper .aboutSkills .carousel {
     display: block;
+    overflow-x: scroll;
   }
   .projects .wrapper h2 {
     margin: 60px;
