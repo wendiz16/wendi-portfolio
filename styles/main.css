@@ -659,6 +659,7 @@ footer {
   header .wrapper .headerContent h1 {
     font-size: 2.5rem;
     text-align: center;
+    height: 100px;
   }
   .about .wrapper .aboutInfo {
     padding: 70px 100px;
