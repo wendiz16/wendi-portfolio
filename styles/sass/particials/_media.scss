@@ -1,0 +1,189 @@
+
+//small laptops
+
+@media(max-width:1290px){
+ 
+ //sections-about
+  .skillIcons{
+  padding:0 280px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+ }
+}
+
+
+//tablets 
+@media(max-width:850px){
+  
+  //header part 
+  header{
+    .wrapper{
+      .headerContent{
+        h1{
+          font-size: 2.5rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  //sections-about
+
+  .about{
+    .wrapper{
+      .aboutInfo{
+        padding: 70px 100px;
+      }
+    }
+  }
+
+
+
+
+
+  .skillIcons{
+   padding: 0 50px;  
+  }
+  
+  //sections-projects
+  .projects{
+    .wrapper{
+     .flexBox{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .imgContainer{
+        width:80%;
+      }
+      .contentContainer{
+        width:85%;
+        text-align: center;
+        
+
+        h3,.skills,p{
+          text-align: center;
+          margin: 25px 0;
+        }
+        
+      }
+     }
+    }
+  }
+}
+
+
+
+//smart phones
+
+@media all and (max-width:500px){
+  h2{
+    font-size:1.7rem ;
+  }
+  //header
+
+  header{
+    
+   .wrapper{
+    nav{
+      margin-bottom: 40px;
+      ul{
+        li{
+          margin-right:15px;
+          a{
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    .headerContent{
+      h1{
+        font-size:1.9rem;
+        margin-bottom: 35px;
+        height:90px;
+      }
+      .lead{
+        font-size: 0.85rem ;
+        text-align: center;
+      }
+      .projects{
+        font-size: 0.95rem;
+        font-weight: bold;
+      }
+    }
+   }
+  }
+
+  //sections-about
+  .about{
+    .wrapper{
+      .aboutInfo{
+        padding: 70px 30px;
+        text-align: center;
+      }
+      
+      .aboutSkills{
+        h2{
+          padding-top: 70px;
+          margin-bottom: 20px;
+        }
+        .carousel{
+          display: block;
+        }
+      }
+
+    }
+  }
+
+  //sections-projects
+  .projects{
+    .wrapper{
+      
+      h2{
+        margin: 60px;
+      }
+      .flexBox{
+        .imgContainer{
+          width:100%;
+          margin-top: -20px;
+        }
+        .contentContainer{
+          text-align: center;
+          width:100%;
+          
+          a{
+            margin-right: 0;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  //sections-contact
+  .contact{
+    .wrapper{
+      h2{
+        margin-top: 45px;
+      }
+      form{
+        .textFields{
+          grid-template-areas:
+          "name"
+          "email"
+          "subject"
+          "phone"
+          "message";
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  //footer 
+
+  footer{
+    font-size: 0.9rem;
+  }
+
+}

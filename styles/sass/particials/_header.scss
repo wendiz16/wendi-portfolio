@@ -17,6 +17,7 @@ header {
   
   .wrapper{
     nav{
+      text-align: center;
       margin-bottom: 80px;
       ul{
         display: flex;
@@ -56,6 +57,7 @@ header {
       font-family: $bodyFamily;
      }
      .projects{
+      font-size: 1.1rem;
       padding: 10px 25px;
       background-color: $btnColor;
       border-radius: 5px;

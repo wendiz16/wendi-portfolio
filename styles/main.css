@@ -325,7 +325,7 @@ img {
 }
 .flexBox .contentContainer p {
   margin-bottom: 20px;
-  text-align: justify;
+  text-align: left;
 }
 .flexBox .contentContainer a {
   margin-right: 30px;
@@ -362,6 +362,7 @@ header {
   padding: 25px 50px;
 }
 header .wrapper nav {
+  text-align: center;
   margin-bottom: 80px;
 }
 header .wrapper nav ul {
@@ -412,6 +413,7 @@ header .wrapper .headerContent .lead {
   font-family: "Nunito Sans", sans-serif;
 }
 header .wrapper .headerContent .projects {
+  font-size: 1.1rem;
   padding: 10px 25px;
   background-color: #F8DCC9;
   border-radius: 5px;
@@ -463,13 +465,24 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
   color: #333;
   margin-bottom: 50px;
 }
+.about .wrapper .aboutSkills .carousel {
+  display: none;
+  width: 100%;
+  height: 200px;
+  overflow-x: scroll;
+  padding: 10px;
+  margin: 0;
+  white-space: nowrap;
+  border-top: 0px dashed rgba(0, 0, 0, 0.1);
+  border-bottom: 0px dashed rgba(0, 0, 0, 0.1);
+}
 .about .wrapper .aboutSkills .skillIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 60px;
+  gap: 30px;
   margin-bottom: 120px;
 }
 .about .wrapper .aboutSkills .skillIcons .pie {
@@ -477,7 +490,7 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
   --p:80;
   --b:10px;
   --c:#9a88b3;
-  --w:150px;
+  --w:140px;
   width: var(--w);
   aspect-ratio: 1;
   position: relative;
@@ -501,8 +514,8 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
 .about .wrapper .aboutSkills .skillIcons .pie:after {
   inset: calc(50% - var(--b) / 2);
   background: var(--c);
-  -webkit-transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
-          transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+  -webkit-transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - 70px));
+          transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - 70px));
 }
 .about .wrapper .aboutSkills .skillIcons .pie span {
   display: block;
@@ -631,4 +644,115 @@ footer {
   background-color: #333;
   padding: 20px;
   color: #FFFFFF;
+}
+
+@media (max-width: 1290px) {
+  .skillIcons {
+    padding: 0 280px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 850px) {
+  header .wrapper .headerContent h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .about .wrapper .aboutInfo {
+    padding: 70px 100px;
+  }
+  .skillIcons {
+    padding: 0 50px;
+  }
+  .projects .wrapper .flexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .wrapper .flexBox .imgContainer {
+    width: 80%;
+  }
+  .projects .wrapper .flexBox .contentContainer {
+    width: 85%;
+    text-align: center;
+  }
+  .projects .wrapper .flexBox .contentContainer h3, .projects .wrapper .flexBox .contentContainer .skills, .projects .wrapper .flexBox .contentContainer p {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+@media all and (max-width: 500px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+  header .wrapper nav {
+    margin-bottom: 40px;
+  }
+  header .wrapper nav ul li {
+    margin-right: 15px;
+  }
+  header .wrapper nav ul li a {
+    font-size: 1.1rem;
+  }
+  header .wrapper .headerContent h1 {
+    font-size: 1.9rem;
+    margin-bottom: 35px;
+    height: 90px;
+  }
+  header .wrapper .headerContent .lead {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  header .wrapper .headerContent .projects {
+    font-size: 0.95rem;
+    font-weight: bold;
+  }
+  .about .wrapper .aboutInfo {
+    padding: 70px 30px;
+    text-align: center;
+  }
+  .about .wrapper .aboutSkills h2 {
+    padding-top: 70px;
+    margin-bottom: 20px;
+  }
+  .about .wrapper .aboutSkills .carousel {
+    display: block;
+  }
+  .projects .wrapper h2 {
+    margin: 60px;
+  }
+  .projects .wrapper .flexBox .imgContainer {
+    width: 100%;
+    margin-top: -20px;
+  }
+  .projects .wrapper .flexBox .contentContainer {
+    text-align: center;
+    width: 100%;
+  }
+  .projects .wrapper .flexBox .contentContainer a {
+    margin-right: 0;
+    padding: 5px 10px;
+  }
+  .contact .wrapper h2 {
+    margin-top: 45px;
+  }
+  .contact .wrapper form .textFields {
+    grid-template-areas: "name" "email" "subject" "phone" "message";
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
 }
