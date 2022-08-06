@@ -728,6 +728,7 @@ footer {
   .about .wrapper .aboutSkills .carousel {
     display: block;
     overflow-x: scroll;
+    height: 200px;
   }
   .projects .wrapper h2 {
     margin: 60px;
