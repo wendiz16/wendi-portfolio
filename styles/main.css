@@ -323,6 +323,10 @@ img {
   color: #36117e;
   margin-bottom: 10px;
 }
+.flexBox .contentContainer .content {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
 .flexBox .contentContainer p {
   margin-bottom: 20px;
   text-align: left;
@@ -446,6 +450,10 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
           align-items: center;
   padding: 70px 300px;
   text-align: justify;
+}
+.about .wrapper .aboutInfo p {
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 .about .wrapper .aboutSkills {
   background-color: #c9d4f8;
@@ -711,8 +719,11 @@ footer {
     font-weight: bold;
   }
   .about .wrapper .aboutInfo {
-    padding: 70px 30px;
+    padding: 70px 20px;
     text-align: center;
+  }
+  .about .wrapper .aboutInfo p {
+    font-size: 1.1rem;
   }
   .about .wrapper .aboutSkills h2 {
     padding-top: 70px;
@@ -736,6 +747,10 @@ footer {
   .projects .wrapper .flexBox .contentContainer {
     text-align: center;
     width: 100%;
+    padding: 0 25px;
+  }
+  .projects .wrapper .flexBox .contentContainer .content {
+    font-size: 1.1rem;
   }
   .projects .wrapper .flexBox .contentContainer a {
     margin-right: 0;

@@ -119,8 +119,11 @@
   .about{
     .wrapper{
       .aboutInfo{
-        padding: 70px 30px;
+        padding: 70px 20px;
         text-align: center;
+        p{
+          font-size: 1.1rem;
+        }
       }
       
       .aboutSkills{
@@ -156,7 +159,10 @@
         .contentContainer{
           text-align: center;
           width:100%;
-          
+          padding: 0 25px;
+          .content{
+            font-size: 1.1rem;
+          }
           a{
             margin-right: 0;
             padding: 5px 10px;
