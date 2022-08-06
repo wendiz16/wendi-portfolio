@@ -465,14 +465,6 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
   color: #333;
   margin-bottom: 50px;
 }
-.about .wrapper .aboutSkills .carousel {
-  display: none;
-  width: 100%;
-  padding: 20px;
-  margin: 0;
-  white-space: nowrap;
-  display: none;
-}
 .about .wrapper .aboutSkills .skillIcons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,7 +720,10 @@ footer {
   .about .wrapper .aboutSkills .carousel {
     display: block;
     overflow-x: scroll;
-    height: 200px;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    white-space: nowrap;
   }
   .projects .wrapper h2 {
     margin: 60px;

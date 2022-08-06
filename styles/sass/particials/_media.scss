@@ -131,9 +131,14 @@
         .carousel{
           display: block;
           overflow-x: scroll;
-          height:200px;
+          width: 100%;
+          padding: 20px;
+          margin: 0;
+          white-space: nowrap; 
         }
-       
+      //  .skillIcons{
+      //   margin-bottom: 20px;
+      //  }
       }
 
     }
