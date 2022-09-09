@@ -295,18 +295,17 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px;
+  padding: 20px;
+}
+.flexBox .imgContainer img {
+  width: 100%;
+  text-align: center;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.flexBox .imgContainer img {
-  width: 90%;
-  border-radius: 20%;
-  text-align: center;
-}
-.flexBox .imgContainer:hover, .flexBox .imgContainer:focus {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+.flexBox .imgContainer img:hover, .flexBox .imgContainer img:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .flexBox .contentContainer {
   max-width: 100%;
@@ -343,7 +342,7 @@ img {
   background-color: #988DAE;
 }
 
-.box2 {
+.box2, .box4 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
