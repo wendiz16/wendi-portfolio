@@ -253,13 +253,13 @@ h2 {
   font-size: 2.5rem;
   font-style: italic;
   color: #36117e;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #333;
   margin-top: 55px;
 }
@@ -316,7 +316,8 @@ img {
   margin-bottom: 5px;
 }
 .flexBox .contentContainer .skills {
-  font-size: 0.8rem;
+  margin-top: 5px;
+  font-size: 1.1rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
   color: #36117e;
@@ -347,6 +348,10 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.box2 .imgContainer, .box2 .contentContainer, .box3 .imgContainer, .box3 .contentContainer, .box4 .imgContainer, .box4 .contentContainer {
+  margin-top: 70px;
 }
 
 .skipLink {
@@ -451,8 +456,11 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
   text-align: justify;
 }
 .about .wrapper .aboutInfo p {
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 1.2rem;
+}
+.about .wrapper .aboutInfo .text1 {
+  margin-bottom: 20px;
 }
 .about .wrapper .aboutSkills {
   background-color: #c9d4f8;
@@ -558,6 +566,10 @@ header .wrapper .headerContent .projects:hover, header .wrapper .headerContent .
 .projects .wrapper h2 {
   margin-top: 100px;
   margin-bottom: 50px;
+}
+.projects .wrapper .borderline {
+  border: 2px solid #fff;
+  width: 100%;
 }
 
 .contact {
@@ -690,6 +702,9 @@ footer {
     text-align: center;
     margin: 25px 0;
   }
+  .projects .wrapper .box1 .contentContainer h3 {
+    margin-top: 60px;
+  }
 }
 @media all and (max-width: 500px) {
   h2 {
@@ -718,7 +733,7 @@ footer {
     font-weight: bold;
   }
   .about .wrapper .aboutInfo {
-    padding: 70px 20px;
+    padding: 70px 25px;
     text-align: center;
   }
   .about .wrapper .aboutInfo p {
@@ -741,7 +756,7 @@ footer {
   }
   .projects .wrapper .flexBox .imgContainer {
     width: 100%;
-    margin-top: -20px;
+    margin-top: 40px;
   }
   .projects .wrapper .flexBox .contentContainer {
     text-align: center;
@@ -754,6 +769,12 @@ footer {
   .projects .wrapper .flexBox .contentContainer a {
     margin-right: 0;
     padding: 5px 10px;
+  }
+  .projects .wrapper .box1 .contentContainer h3 {
+    margin-top: 60px;
+  }
+  .projects .wrapper .box2 .contentContainer h3, .projects .wrapper .box3 .contentContainer h3, .projects .wrapper .box4 .contentContainer h3 {
+    margin-top: -8px;
   }
   .contact .wrapper h2 {
     margin-top: 45px;

@@ -30,12 +30,12 @@ h2{
   font-size: 2.5rem;
   font-style: italic;
   color:$aboutColor;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 h3{
   font-family: $bodyFamily;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color:$fontColor1;
   margin-top: 55px;
 }
@@ -76,7 +76,8 @@ img{
     margin-bottom: 5px;
   }
   .skills{
-    font-size: 0.8rem;
+    margin-top: 5px;
+    font-size: 1.1rem;
     font-family: $bodyFamily;
     font-weight: bold;
     color: $aboutColor;
@@ -100,10 +101,13 @@ img{
       background-color: $primary;
     }
   }
-
   }
 }
 .box2,.box4{
  flex-direction: row-reverse;
 }
-
+.box2,.box3,.box4{
+  .imgContainer, .contentContainer{
+    margin-top: 70px;
+  }
+}

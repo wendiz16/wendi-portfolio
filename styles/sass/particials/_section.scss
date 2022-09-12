@@ -11,8 +11,11 @@
     padding: 70px 300px;
     text-align:justify;
     p{
-      line-height: 1.5;
+      line-height: 1.6;
       font-size: 1.2rem;
+    }
+    .text1{
+      margin-bottom: 20px;
     }
     
    }
@@ -113,11 +116,13 @@
     margin-top: 100px;
     margin-bottom: 50px;
   }
+  .borderline{
+    border:2px solid #fff;
+    width:100%;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
  }
 }
 
@@ -195,8 +200,6 @@
           cursor:pointer;
         }
       }
-      
-
       }
     }
   }
