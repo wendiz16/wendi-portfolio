@@ -733,7 +733,7 @@ footer {
     font-weight: bold;
   }
   .about .wrapper .aboutInfo {
-    padding: 70px 25px;
+    padding: 70px 30px;
     text-align: center;
   }
   .about .wrapper .aboutInfo p {
@@ -762,6 +762,12 @@ footer {
     text-align: center;
     width: 100%;
     padding: 0 25px;
+  }
+  .projects .wrapper .flexBox .contentContainer h3 {
+    font-size: 1.3rem;
+  }
+  .projects .wrapper .flexBox .contentContainer .skills {
+    font-size: 0.9rem;
   }
   .projects .wrapper .flexBox .contentContainer .content {
     font-size: 1.1rem;

@@ -82,7 +82,7 @@
 
 @media all and (max-width:500px){
   h2{
-    font-size:1.7rem ;
+    font-size:1.7rem;
   }
   //header
 
@@ -122,7 +122,7 @@
   .about{
     .wrapper{
       .aboutInfo{
-        padding: 70px 25px;
+        padding: 70px 30px;
         text-align: center;
         p{
           font-size: 1.1rem;
@@ -160,6 +160,12 @@
           margin-top: 40px;
         }
         .contentContainer{
+          h3{
+            font-size: 1.3rem;
+          }
+          .skills{
+            font-size: 0.9rem;
+          }
           text-align: center;
           width:100%;
           padding: 0 25px;
